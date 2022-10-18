@@ -14,7 +14,7 @@ a{
     list-style-type: none;
     text-align: center;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color:black;
     font-weight: 500;
     overflow: hidden;
@@ -29,12 +29,56 @@ a{
     margin: 0 0 0 0;
 }
 
+.post-header{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.poster-header-image{
+    width: 450px;
+    margin: 30px 0 0 20px;
+    height: 400px;
+    box-shadow: 4px 5px 8px 2px lightgray;
+    border-radius: 10px;
+}
+.image-overlay{
+    position: relative;
+    top: -200px;
+    left: 16px;
+    color: white;
+    font-size: 1rem;
+   
+}
+.image-overlay a{
+    color: steelblue;
+    font-weight: bold;
+}
+.image-overlay a:hover{
+    text-decoration: underline;
+    color:gold;
+}
+/* .over-image{
+    position: relative;
+    height: 400px;
+    background-color: rgba(212, 125, 43, .7);
+    color: white;
+} */
+
+.header-img{
+    width: 100%;
+    background-repeat:no-repeat;
+    height: 100%;background-size:cover;
+    border-radius: 10px;
+}
+
 .recent{
     background-color: rgba(174, 28, 28, 0.5);
-    width: 150px;
-    font-size: 1.3rem;
+    width: 100px;
+    font-size: 0.8rem;
     border-radius: 10px;
     padding: 10px 10px;
+    margin: 30px 0 0 0;
 }
 
 .post{
@@ -53,7 +97,7 @@ a{
 }
 
 .post-card-head{
-    font-size: 1.3rem;
+    font-size: 1rem;
     width: 100%;
     text-align: justify;
     margin: 0 0 10px 0;
@@ -62,21 +106,21 @@ a{
 .post-card-span{
     width: 100%;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: gray;
     font-style: italic;
 }
 .post-card-description{
     width: 100%;
     text-align: justify;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: gray;
-    margin: 20px 0 4px 0;
+    margin: 10px 0 4px 0;
 }
 
 .post-card-link{
     background-color: steelblue;
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     padding: 20px 20px;
     cursor: pointer;
     text-align: center;
@@ -85,9 +129,9 @@ a{
 .newsletter-main{
     background-color: steelblue;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: #fff;
-    padding: 30px 0 30px 0;
+    padding: 10px 0 10px 0;
 }
 
 .newsletter-input{
@@ -104,7 +148,6 @@ a{
 
 .newsletter-button{
     background-color: #fff;
-    height: 40px;
     width: 140px;
     cursor: pointer;
     border: none;
@@ -113,6 +156,122 @@ a{
     height: 50px;
 }
 
+.contact{
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 40px 0 0 0;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color:  #70c274;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-section {
+    padding: 50px;
+    flex: 50%;
+  }
+  
+  .text-section {
+    padding: 50px;
+    flex: 50%;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color:  steelblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  body {font-family: Arial, Helvetica, sans-serif;}
+  * {box-sizing: border-box;}
+  
+  .login{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .log {
+    padding: 0 20%;
+  }
+  .icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border: 2px solid dodgerblue;
+  }
+  
+  .button{
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .button:hover {
+    opacity: 1;
+  }
+  
+
 .footer{
     display: flex;
     flex-wrap: wrap;
@@ -120,10 +279,10 @@ a{
     background-color: black;
     color: #fff;
     margin: 30px 0 0 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .footerDesc{
-    width: 400px;
+    width: 300px;
     margin: 40px 0 0 0;
     padding: 20px 20px;
 }
