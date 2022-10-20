@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.aboutblog::after {
+display: block;
+content: "";
+clear: both;
+}
+
+.aboutblog > div
+{
+  float: right;
+  margin-top: 40px;
+}
+
+.about-content{
+  width: 50%;
+  height: 50%;
+}
+
+.aboutimage{
+  width: 40%;
+}
+.aboutimage img {
+  width: 90%;
+  height: 70vh;
+}
+.about-content h1{
+   color: steelblue;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.about-content p{
+  line-height: 1.5;
+}
